@@ -26,45 +26,7 @@ twister
 ├── tailwind.config.js
 └── README.md
 ```
-
-## Setup Instructions
-
-1. **Clone the Repository**:
-   ```bash
-   git clone <repository-url>
-   cd twister
-   ```
-
-2. **Install Dependencies**:
-   Ensure you have Node.js installed, then run:
-   ```bash
-   npm install
-   ```
-
-3. **Build the Project**:
-   Use the following command to build the project:
-   ```bash
-   npm run build
-   ```
-
-4. **Serve the Project**:
-   To serve the project locally, run:
-   ```bash
-   npm start
-   ```
-
-5. **Deploy to GitHub Pages**:
-   Follow the instructions for deploying to GitHub Pages in the `package.json` file.
-
 ## Usage Guidelines
-
-- Open `index.html` in your browser to view the application.
-- Use the navigation to explore different features of the app.
-- Ensure to log out after use for security.
-
-## Contributing
-
-Contributions are welcome! Please submit a pull request or open an issue for any suggestions or improvements.
 
 ## License
 
