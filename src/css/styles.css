@@ -1,0 +1,49 @@
+/* Tailwind CSS styles for the Twister app */
+
+/* Import Tailwind CSS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #333;
+}
+
+/* Glassmorphism effect */
+.glass {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Liquid glass theme */
+.liquid-glass {
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Custom styles for sections */
+.header, .footer {
+    padding: 20px;
+    text-align: center;
+}
+
+.feed, .chat, .explore, .education, .synthara-ai, .profile {
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .header, .footer {
+        padding: 15px;
+    }
+
+    .feed, .chat, .explore, .education, .synthara-ai, .profile {
+        margin: 10px;
+        padding: 10px;
+    }
+}
