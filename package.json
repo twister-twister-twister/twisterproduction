@@ -1,0 +1,23 @@
+{
+  "name": "twister",
+  "version": "1.0.0",
+  "description": "A social media app with features including a feed, chat, explore, education, Synthara AI, profile, and sign out.",
+  "main": "index.html",
+  "scripts": {
+    "build": "tailwindcss build src/css/styles.css -o src/css/output.css",
+    "start": "live-server"
+  },
+  "dependencies": {
+    "tailwindcss": "^2.2.19"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  },
+  "keywords": [
+    "social media",
+    "twister",
+    "tailwindcss"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}

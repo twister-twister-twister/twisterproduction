@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twister</title>
+    <link rel="icon" type="image/png" href="src/assets/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="src/css/styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white" style="backdrop-filter: blur(10px);">
+    <header class="p-4 bg-white/10 shadow-lg sticky top-0 z-50" style="backdrop-filter: blur(20px);">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="src/assets/logo.png" alt="Twister Logo" class="h-8 w-8 mr-3">
+                <h1 class="text-2xl font-bold">Twister</h1>
+            </div>
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="#feed" class="hover:text-blue-400">Feed</a>
+                <a href="#chat" class="hover:text-blue-400">Chat</a>
+                <a href="#explore" class="hover:text-blue-400">Explore</a>
+                <a href="#education" class="hover:text-blue-400">Education</a>
+                <a href="#synthara-ai" class="hover:text-blue-400">Synthara AI</a>
+                <a href="#profile" class="hover:text-blue-400">Profile</a>
+                <a href="#sign-out" class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full">Sign Out</a>
+            </nav>
+            <button class="md:hidden text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="p-4 container mx-auto">
+        <section id="feed" class="my-8 p-6 bg-white/10 rounded-xl shadow-lg" style="backdrop-filter: blur(20px);">
+            <h2 class="text-xl font-semibold mb-4">Feed</h2>
+            <div>Your feed content goes here.</div>
+        </section>
+        <section id="chat" class="my-8 p-6 bg-white/10 rounded-xl shadow-lg" style="backdrop-filter: blur(20px);">
+            <h2 class="text-xl font-semibold mb-4">Chat</h2>
+            <div>Chat functionality goes here.</div>
+        </section>
+        <section id="explore" class="my-8 p-6 bg-white/10 rounded-xl shadow-lg" style="backdrop-filter: blur(20px);">
+            <h2 class="text-xl font-semibold mb-4">Explore</h2>
+            <div>Explore features go here.</div>
+        </section>
+        <section id="education" class="my-8 p-6 bg-white/10 rounded-xl shadow-lg" style="backdrop-filter: blur(20px);">
+            <h2 class="text-xl font-semibold mb-4">Education</h2>
+            <div>Educational content goes here.</div>
+        </section>
+        <section id="synthara-ai" class="my-8 p-6 bg-white/10 rounded-xl shadow-lg" style="backdrop-filter: blur(20px);">
+            <h2 class="text-xl font-semibold mb-4">Synthara AI</h2>
+            <div>Synthara AI features go here.</div>
+        </section>
+        <section id="profile" class="my-8 p-6 bg-white/10 rounded-xl shadow-lg" style="backdrop-filter: blur(20px);">
+            <h2 class="text-xl font-semibold mb-4">Profile</h2>
+            <div>Profile management goes here.</div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="src/js/main.js"></script>
+</body>
+</html>
