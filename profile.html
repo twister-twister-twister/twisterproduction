@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twister - Profile</title>
+    <link rel="icon" type="image/png" href="src/assets/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="src/css/styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="p-4 bg-white/10 shadow-lg sticky top-0 z-50" style="backdrop-filter: blur(20px);">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="src/assets/logo.png" alt="Twister Logo" class="h-8 w-8 mr-3">
+                <h1 class="text-2xl font-bold">Twister</h1>
+            </div>
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="feed.html" class="hover:text-blue-400">Feed</a>
+                <a href="chat.html" class="hover:text-blue-400">Chat</a>
+                <a href="explore.html" class="hover:text-blue-400">Explore</a>
+                <a href="education.html" class="hover:text-blue-400">Education</a>
+                <a href="synthara-ai.html" class="hover:text-blue-400">Synthara AI</a>
+                <a href="profile.html" class="text-blue-400 font-bold">Profile</a>
+                <a href="index.html" class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full">Sign Out</a>
+            </nav>
+            <button class="md:hidden text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="p-4 container mx-auto">
+        <div class="my-8 p-6 bg-white/10 rounded-xl shadow-lg" style="backdrop-filter: blur(20px);">
+            <h2 class="text-xl font-semibold mb-6">Edit Profile</h2>
+            <div class="relative h-32 bg-gray-700 rounded-t-lg">
+                <img src="https://via.placeholder.com/800x200" alt="Banner" class="w-full h-full object-cover rounded-t-lg">
+                <button class="absolute bottom-2 right-2 bg-black/50 text-white p-1 rounded-full text-xs">Edit Banner</button>
+            </div>
+            <div class="relative p-4">
+                <div class="absolute -top-12 left-4">
+                    <img class="h-24 w-24 rounded-full border-4 border-gray-800" src="https://i.pravatar.cc/150?u=a042581f4e29026704d" alt="Profile Picture">
+                    <button class="absolute bottom-0 right-0 bg-black/50 text-white p-1 rounded-full text-xs">Edit</button>
+                </div>
+            </div>
+            <form class="space-y-4 pt-12">
+                <div>
+                    <label for="displayName" class="text-sm font-bold text-gray-300 block">Display Name</label>
+                    <input type="text" id="displayName" value="Jane Doe" class="w-full p-3 mt-1 text-gray-900 bg-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+                </div>
+                <div>
+                    <label for="username" class="text-sm font-bold text-gray-300 block">Username</label>
+                    <input type="text" id="username" value="@janedoe" class="w-full p-3 mt-1 text-gray-900 bg-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+                </div>
+                <div>
+                    <label for="bio" class="text-sm font-bold text-gray-300 block">Bio</label>
+                    <textarea id="bio" rows="3" class="w-full p-3 mt-1 text-gray-900 bg-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">Lover of UI design and web development.</textarea>
+                </div>
+                <button type="submit" class="w-full py-3 px-4 bg-blue-600 hover:bg-blue-700 rounded-lg text-white font-bold transition duration-300">Save Changes</button>
+            </form>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="src/js/main.js"></script>
+</body>
+</html>

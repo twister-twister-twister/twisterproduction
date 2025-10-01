@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twister - Feed</title>
+    <link rel="icon" type="image/png" href="src/assets/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="src/css/styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="p-4 bg-white/10 shadow-lg sticky top-0 z-50" style="backdrop-filter: blur(20px);">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="src/assets/logo.png" alt="Twister Logo" class="h-8 w-8 mr-3">
+                <h1 class="text-2xl font-bold">Twister</h1>
+            </div>
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="feed.html" class="text-blue-400 font-bold">Feed</a>
+                <a href="chat.html" class="hover:text-blue-400">Chat</a>
+                <a href="explore.html" class="hover:text-blue-400">Explore</a>
+                <a href="education.html" class="hover:text-blue-400">Education</a>
+                <a href="synthara-ai.html" class="hover:text-blue-400">Synthara AI</a>
+                <a href="profile.html" class="hover:text-blue-400">Profile</a>
+                <a href="index.html" class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full">Sign Out</a>
+            </nav>
+            <button class="md:hidden text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="p-4 container mx-auto">
+        <div class="my-8 p-6 bg-white/10 rounded-xl shadow-lg" style="backdrop-filter: blur(20px);">
+            <h2 class="text-xl font-semibold mb-4">Create a Post</h2>
+            <textarea class="w-full p-3 text-gray-900 bg-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" rows="3" placeholder="What's on your mind?"></textarea>
+            <div class="flex justify-between items-center mt-4">
+                <button class="bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">AI Enhance</button>
+                <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Post</button>
+            </div>
+        </div>
+
+        <div id="feed-content" class="space-y-6">
+            <!-- Example Post -->
+            <div class="p-6 bg-white/10 rounded-xl shadow-lg" style="backdrop-filter: blur(20px);">
+                <div class="flex items-center mb-4">
+                    <img class="h-10 w-10 rounded-full mr-4" src="https://i.pravatar.cc/50?u=a042581f4e29026704d" alt="User Avatar">
+                    <div>
+                        <p class="font-bold">Jane Doe</p>
+                        <p class="text-sm text-gray-400">@janedoe · 2h</p>
+                    </div>
+                </div>
+                <p>Just discovered this amazing liquid glass theme on Twister! The UI is so clean. #uidesign #webdev</p>
+                <div class="flex justify-around items-center mt-4 text-gray-400">
+                    <button class="flex items-center space-x-2 hover:text-blue-400"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg> <span>Like</span></button>
+                    <button class="flex items-center space-x-2 hover:text-yellow-400"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.293 2.293a1 1 0 010 1.414L13 12l-1.293-1.293a1 1 0 010-1.414L14 7m-3 10l2.293 2.293a1 1 0 010 1.414L13 22l-1.293-1.293a1 1 0 010-1.414L14 17m-3-10l-2.293 2.293a1 1 0 000 1.414L9 12l1.293-1.293a1 1 0 000-1.414L8 7m3 10l-2.293 2.293a1 1 0 000 1.414L9 22l1.293-1.293a1 1 0 000-1.414L8 17" /></svg> <span>Super</span></button>
+                    <button class="flex items-center space-x-2 hover:text-green-400"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12s-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.68

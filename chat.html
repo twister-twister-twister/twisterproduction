@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twister - Chat</title>
+    <link rel="icon" type="image/png" href="src/assets/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="src/css/styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="p-4 bg-white/10 shadow-lg sticky top-0 z-50" style="backdrop-filter: blur(20px);">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="src/assets/logo.png" alt="Twister Logo" class="h-8 w-8 mr-3">
+                <h1 class="text-2xl font-bold">Twister</h1>
+            </div>
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="feed.html" class="hover:text-blue-400">Feed</a>
+                <a href="chat.html" class="text-blue-400 font-bold">Chat</a>
+                <a href="explore.html" class="hover:text-blue-400">Explore</a>
+                <a href="education.html" class="hover:text-blue-400">Education</a>
+                <a href="synthara-ai.html" class="hover:text-blue-400">Synthara AI</a>
+                <a href="profile.html" class="hover:text-blue-400">Profile</a>
+                <a href="index.html" class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full">Sign Out</a>
+            </nav>
+            <button class="md:hidden text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="p-4 container mx-auto">
+        <div class="my-8 p-6 bg-white/10 rounded-xl shadow-lg" style="backdrop-filter: blur(20px);">
+            <h2 class="text-xl font-semibold mb-4">Chat</h2>
+            <p class="mb-4">Your assigned phone number is: <span class="font-mono bg-gray-800 px-2 py-1 rounded">555-TWISTER</span></p>
+            <div class="flex space-x-4">
+                <input type="text" class="flex-grow p-3 text-gray-900 bg-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Enter a friend's phone number">
+                <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">Add Friend</button>
+            </div>
+            <div class="mt-6">
+                <h3 class="font-semibold">Conversations</h3>
+                <div class="mt-2 space-y-2">
+                    <div class="p-3 bg-white/5 rounded-lg flex items-center justify-between">
+                        <p>John Doe</p>
+                        <span class="text-xs text-gray-400">2 new messages</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="src/js/main.js"></script>
+</body>
+</html>

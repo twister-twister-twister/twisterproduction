@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twister - Education</title>
+    <link rel="icon" type="image/png" href="src/assets/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="src/css/styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="p-4 bg-white/10 shadow-lg sticky top-0 z-50" style="backdrop-filter: blur(20px);">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="src/assets/logo.png" alt="Twister Logo" class="h-8 w-8 mr-3">
+                <h1 class="text-2xl font-bold">Twister</h1>
+            </div>
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="feed.html" class="hover:text-blue-400">Feed</a>
+                <a href="chat.html" class="hover:text-blue-400">Chat</a>
+                <a href="explore.html" class="hover:text-blue-400">Explore</a>
+                <a href="education.html" class="text-blue-400 font-bold">Education</a>
+                <a href="synthara-ai.html" class="hover:text-blue-400">Synthara AI</a>
+                <a href="profile.html" class="hover:text-blue-400">Profile</a>
+                <a href="index.html" class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full">Sign Out</a>
+            </nav>
+            <button class="md:hidden text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="p-4 container mx-auto">
+        <div class="my-8 p-6 bg-white/10 rounded-xl shadow-lg" style="backdrop-filter: blur(20px);">
+            <h2 class="text-xl font-semibold mb-4">Education Hub</h2>
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-lg">My Classrooms</h3>
+                <button class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg">Join Classroom</button>
+            </div>
+            <div class="space-y-4">
+                <div class="p-4 bg-white/5 rounded-lg">
+                    <h4 class="font-bold">Math - Grade 8</h4>
+                    <p class="text-sm text-gray-300">Next assignment due: Oct 15, 2025</p>
+                </div>
+            </div>
+            <h3 class="text-lg mt-8 mb-4">Learn with AI Assistant</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <button class="p-4 bg-blue-600 hover:bg-blue-700 rounded-lg text-left">
+                    <p class="font-bold">Math (K-12)</p>
+                    <p class="text-sm">Practice problems, get explanations.</p>
+                </button>
+                <button class="p-4 bg-purple-600 hover:bg-purple-700 rounded-lg text-left">
+                    <p class="font-bold">Reading & Writing</p>
+                    <p class="text-sm">Improve grammar, vocabulary, and style.</p>
+                </button>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="src/js/main.js"></script>
+</body>
+</html>
